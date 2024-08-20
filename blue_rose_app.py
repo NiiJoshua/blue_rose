@@ -1,9 +1,12 @@
 import streamlit as st
 import pandas as pd
-import joblib
+# import joblib
+import pickle
 
 # Load the trained model (assuming you've saved it)
-model = joblib.load("model_pkl")
+# model = joblib.load("model_pkl")
+with open("model.pkl", "rb") as f:
+    model = pickle.load(f)
 
 st.title("House Price Prediction for Blue Rose Ltd")
 
