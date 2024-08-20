@@ -3,6 +3,14 @@ import pandas as pd
 # import joblib
 import pickle
 
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+from sklearn.ensemble import RandomForestRegressor
+
 # Load the trained model (assuming you've saved it)
 # model = joblib.load("model_pkl")
 with open("model.pkl", "rb") as f:
