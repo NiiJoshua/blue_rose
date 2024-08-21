@@ -6,7 +6,7 @@ import pickle
 
 # Load the trained model (assuming you've saved it)
 # model = joblib.load("model_pkl")
-with open("model.pkl", "rb") as f:
+with open("model2.pkl", "rb") as f:
     model = pickle.load(f)
 
 
